@@ -57,3 +57,16 @@ header {
     color: $header-color-active;
     font-weight: 900;
 }
+
+
+.header__user-menu-item {
+    background: none;
+    border: none;
+}
+
+.header__user-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
