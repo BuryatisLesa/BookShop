@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-color: rgb(255, 255, 255);
+}
+
+.layout {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 243px;
+  margin: 47px 166px 40px 166px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.header__menu-items {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-height: 39px;
+}
+
+.header__menu-items li, a {
+  font-size: 10px;
+  color: rgb(92, 106, 121);
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.header__menu-link--active {
+  color: rgb(28, 42, 57);
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=books.css.map */

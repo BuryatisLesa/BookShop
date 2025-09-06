@@ -51,7 +51,7 @@ async function getData() {
             console.log('  Description:', book.volumeInfo.description || 'Нет описания');
             console.log('  Average Rating:', book.volumeInfo.averageRating || 'Нет рейтинга');
             console.log('  Ratings Count:', book.volumeInfo.ratingsCount || 'Нет оценок');
-            console.log('  Categories:', book.volumeInfo.categories || 'Нет оценок');
+            console.log('  Categories:', book.volumeInfo.categories || 'Нет категории');
             console.log('  Country:', book.saleInfo.country);
             console.log('  Saleability:', book.saleInfo.saleability);
             console.log('  Is Ebook:', book.saleInfo.isEbook);
