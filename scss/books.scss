@@ -1,31 +1,31 @@
-@import "variables";
+@use "variables";
 
 html, body {
     margin: 0;
+    padding: 0;
 
     // Шрифты
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    background-color: $bg-color;
+    background-color: variables.$bg-color;
 }
 
 
 .layout {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 166px;
+    box-sizing: border-box;
 }
 
 header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    // margin-left: 166px;
-    // margin-right: 166px;
-    gap: 243px;
-    margin: 47px 166px 40px 166px;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 47px;
+    margin-bottom: 40px;
 }
 
 
@@ -41,11 +41,12 @@ header {
     flex-direction: row;
     gap: 40px;
     max-height: 39px;
+    margin-left: 120px;
 }
 
 .header__menu-items li, a {
     font-size: 10px;
-    color: $header-color;
+    color: variables.$header-color;
     text-decoration: none;
     list-style: none;
     text-transform: uppercase;
@@ -54,7 +55,7 @@ header {
 
 
 .header__menu-link--active {
-    color: $header-color-active;
+    color: variables.$header-color-active;
     font-weight: 900;
 }
 
@@ -69,4 +70,14 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 40px;
+    margin-left: 120px;
+}
+
+// .slider-promo {
+//     ...
+// }
+
+
+.slider-promo__item--color-pink-1 {
+    background-color: variables.$bg-color-banner-1;
 }
