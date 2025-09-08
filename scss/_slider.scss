@@ -1,0 +1,53 @@
+@use "variables";
+
+.slider-promo__items {
+    padding: 0;
+
+    .slider-promo__item {
+    position: relative;
+    overflow: hidden;
+    height: 702px;
+    max-width: 100%;
+
+        &--color-pink-1 {
+            background-color: variables.$bg-color-banner-1;
+        }
+
+        .slider-promo__item-confty svg {
+            position: absolute;
+            top: 22px;
+            left: 44px;
+            max-width: 1013px;
+            max-height: 545px;
+            z-index: 1;               
+            pointer-events: none; 
+        }
+
+
+        img {
+            position: absolute;
+            z-index: 2;
+            max-width: 1016px;
+            max-height: 452px;
+            top: 228px;
+            left: 52px;
+        }
+
+
+        h2, .slider-promo__item-up-to, .slider-promo__item-60, .slider-promo__item-percent {
+            position: absolute;
+            z-index: 3; 
+        }
+
+        .slider-promo__item-title {
+            top: 69px;
+            left: 427px;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+
+
+

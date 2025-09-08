@@ -1,4 +1,6 @@
 @use "variables";
+@use "slider";
+@use "header";
 
 html, body {
     margin: 0;
@@ -18,66 +20,4 @@ html, body {
     margin: 0 auto;
     padding: 0 166px;
     box-sizing: border-box;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 47px;
-    margin-bottom: 40px;
-}
-
-
-.header__logo {
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-}
-
-
-.header__menu-items {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    max-height: 39px;
-    margin-left: 120px;
-}
-
-.header__menu-items li, a {
-    font-size: 10px;
-    color: variables.$header-color;
-    text-decoration: none;
-    list-style: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-
-
-.header__menu-link--active {
-    color: variables.$header-color-active;
-    font-weight: 900;
-}
-
-
-.header__user-menu-item {
-    background: none;
-    border: none;
-}
-
-.header__user-menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 40px;
-    margin-left: 120px;
-}
-
-// .slider-promo {
-//     ...
-// }
-
-
-.slider-promo__item--color-pink-1 {
-    background-color: variables.$bg-color-banner-1;
 }

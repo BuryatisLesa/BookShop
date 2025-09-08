@@ -1,18 +1,40 @@
-html, body {
-  margin: 0;
+.slider-promo__items {
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  background-color: rgb(255, 255, 255);
 }
-
-.layout {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 166px;
-  box-sizing: border-box;
+.slider-promo__items .slider-promo__item {
+  position: relative;
+  overflow: hidden;
+  height: 702px;
+  max-width: 100%;
+}
+.slider-promo__items .slider-promo__item--color-pink-1 {
+  background-color: rgb(255, 224, 226);
+}
+.slider-promo__items .slider-promo__item .slider-promo__item-confty svg {
+  position: absolute;
+  top: 22px;
+  left: 44px;
+  max-width: 1013px;
+  max-height: 545px;
+  z-index: 1;
+  pointer-events: none;
+}
+.slider-promo__items .slider-promo__item img {
+  position: absolute;
+  z-index: 2;
+  max-width: 1016px;
+  max-height: 452px;
+  top: 228px;
+  left: 52px;
+}
+.slider-promo__items .slider-promo__item h2, .slider-promo__items .slider-promo__item .slider-promo__item-up-to, .slider-promo__items .slider-promo__item .slider-promo__item-60, .slider-promo__items .slider-promo__item .slider-promo__item-percent {
+  position: absolute;
+  z-index: 3;
+}
+.slider-promo__items .slider-promo__item .slider-promo__item-title {
+  top: 69px;
+  left: 427px;
+  text-transform: uppercase;
 }
 
 header {
@@ -64,8 +86,21 @@ header {
   margin-left: 120px;
 }
 
-.slider-promo__item--color-pink-1 {
-  background-color: rgb(255, 224, 226);
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-color: rgb(255, 255, 255);
+}
+
+.layout {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 166px;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=books.css.map */
