@@ -1,5 +1,6 @@
 "use strict";
 let currentSlide = 0;
+let slideInterval;
 function getSlide(index) {
     const slides = document.querySelectorAll(".slider-promo__item");
     const circles = document.querySelectorAll(".slider-promo__circle-container-circle");
@@ -22,9 +23,23 @@ function navigationCircle() {
     circles.forEach((circle, index) => {
         circle.addEventListener("click", () => {
             getSlide(index);
+            resetAutoSlide(); // при клике сбрасываем таймер
         });
     });
 }
-// инициализация
+function autoSlide() {
+    const slides = document.querySelectorAll(".slider-promo__item");
+    const nextSlide = (currentSlide + 1) % slides.length; // если дошли до конца — идем к первому
+    getSlide(nextSlide);
+}
+function startAutoSlide() {
+    slideInterval = window.setInterval(autoSlide, 5000); // каждые 5 секунд
+}
+function resetAutoSlide() {
+    clearInterval(slideInterval);
+    startAutoSlide();
+}
+// запуск
 getSlide(currentSlide);
 navigationCircle();
+startAutoSlide();
