@@ -2,7 +2,8 @@
 
 .slider-promo__items {
     padding: 0;
-    
+    list-style: none;
+
     // слайд black-friday
     .slider-promo__item {
     position: relative;
@@ -30,7 +31,7 @@
             z-index: 2;
             max-width: 1016px;
             max-height: 452px;
-            top: 235px;
+            top: 228px;
             left: 52px;
         }
 
@@ -45,7 +46,7 @@
             font-weight: 600;
             line-height: 100%;
             letter-spacing: 0%;
-            top: 69px;
+            top: 49px;
             left: 427px;
             text-transform: uppercase;
         }
@@ -126,8 +127,106 @@
                 color: rgba(83, 79, 210, 1);
             }
         }
-    }
 
+        // второй слайд
+        .slider-promo__item-image--bg-image {
+            position: relative;
+            z-index: 0;
+            max-width: 100%;
+            max-height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .slider-promo__item-top {
+            position: absolute;
+            z-index: 0;
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 0%;
+            top: 73px;
+            left: 103px;
+            line-height: 100%;
+            text-transform: lowercase;
+
+            .slider-promo__item-top__over {
+                position: absolute;
+                z-index: 2;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .slider-promo__item-top__under {
+                position: absolute;
+                z-index: 1;
+                top: 5px;
+                left: 5px;
+                color: rgba(83, 79, 210, 1);
+            }
+         }
+        .slider-promo__item-ten {
+            position: absolute;
+            z-index: 0;
+            font-size: 160px;
+            font-weight: 900;
+            letter-spacing: 0%;
+            top: 112px;
+            left: 103px;
+            line-height: 100%;
+            text-transform: uppercase;
+
+            .slider-promo__item-ten__over {
+                position: absolute;
+                z-index: 2;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .slider-promo__item-ten__under {
+                position: absolute;
+                z-index: 1;
+                top: 13px;
+                left: 11px;
+                color: rgba(83, 79, 210, 1);
+            }
+         }
+        .slider-promo__item-books {
+            position: absolute;
+            z-index: 0;
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 0%;
+            top: 214px;
+            left: 307px;
+            line-height: 100%;
+            text-transform: lowercase;
+
+            .slider-promo__item-books__over {
+                position: absolute;
+                z-index: 2;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .slider-promo__item-books__under {
+                position: absolute;
+                z-index: 1;
+                top: 5px;
+                left: 5px;
+                color: rgba(83, 79, 210, 1);
+            }
+         }
+        .slider-promo__item-for-entrepreneurs {
+            position: absolute;
+            z-index: 0;
+            font-size: 25px;
+            font-weight: 600;
+            letter-spacing: 0%;
+            top: 243px;
+            left: 767px;
+            line-height: 100%;
+            text-transform:uppercase;
+            color: rgba(28, 42, 57, 1);
+         }
+
+    }
 }
 
 
