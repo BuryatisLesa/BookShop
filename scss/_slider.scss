@@ -2,7 +2,8 @@
 
 .slider-promo__items {
     padding: 0;
-
+    
+    // слайд black-friday
     .slider-promo__item {
     position: relative;
     overflow: hidden;
@@ -59,11 +60,13 @@
             left: 308px;
             line-height: 100%;
             text-transform: lowercase;
+
             .slider-promo__item-up-to__over {
                 position: absolute;
                 z-index: 2;
                 color: rgba(255, 255, 255, 1);
             }
+
             .slider-promo__item-up-to__under {
                 position: absolute;
                 z-index: 1;
@@ -83,11 +86,13 @@
             left: 476px;
             line-height: 100%;
             text-transform: lowercase;
+
             .slider-promo__item-60__over {
                 position: absolute;
                 z-index: 2;
                 color: rgba(255, 255, 255, 1);
             }
+
             .slider-promo__item-60__under {
                 position: absolute;
                 z-index: 1;
@@ -106,11 +111,13 @@
             left: 737px;
             line-height: 100%;
             text-transform: lowercase;
+
             .slider-promo__item-percent__over {
                 position: absolute;
                 z-index: 2;
                 color: rgba(255, 255, 255, 1);
             }
+
             .slider-promo__item-percent__under {
                 position: absolute;
                 z-index: 1;
