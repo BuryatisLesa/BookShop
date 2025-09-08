@@ -199,6 +199,44 @@
   text-transform: uppercase;
   color: rgb(28, 42, 57);
 }
+.slider-promo__items .slider-promo__item .slider-promo__item-checkout {
+  position: absolute;
+  z-index: 1;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  top: 148px;
+  left: 425px;
+  text-transform: uppercase;
+  color: rgb(28, 42, 57);
+}
+.slider-promo__items .slider-promo__item .slider-promo__item-our {
+  position: absolute;
+  z-index: 0;
+  font-size: 90px;
+  font-weight: 900;
+  letter-spacing: 0%;
+  top: 233px;
+  left: 295px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 653px;
+}
+.slider-promo__items .slider-promo__item .slider-promo__item-our .slider-promo__item-our__over {
+  position: absolute;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+}
+.slider-promo__items .slider-promo__item .slider-promo__item-our .slider-promo__item-our__under {
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  left: 9px;
+  color: rgb(123, 16, 16);
+}
 
 header {
   display: flex;
