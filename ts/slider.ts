@@ -35,7 +35,7 @@ function navigationCircle(): void {
 
 function autoSlide(): void {
   const slides: NodeListOf<HTMLElement> = document.querySelectorAll(".slider-promo__item");
-  const nextSlide = (currentSlide + 1) % slides.length; // если дошли до конца — идем к первому
+  const nextSlide = (currentSlide + 1) % slides.length; // если слайд конечный, то он перейдет к первому
   getSlide(nextSlide);
 }
 
