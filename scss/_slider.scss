@@ -29,7 +29,7 @@
             z-index: 2;
             max-width: 1016px;
             max-height: 452px;
-            top: 228px;
+            top: 235px;
             left: 52px;
         }
 
@@ -40,9 +40,84 @@
         }
 
         .slider-promo__item-title {
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 100%;
+            letter-spacing: 0%;
             top: 69px;
             left: 427px;
             text-transform: uppercase;
+        }
+
+        .slider-promo__item-up-to {
+            position: relative;
+            z-index: 0;
+            font-size: 60px;
+            font-weight: 600;
+            letter-spacing: 0%;
+            top: 104px;
+            left: 308px;
+            line-height: 100%;
+            text-transform: lowercase;
+            .slider-promo__item-up-to__over {
+                position: absolute;
+                z-index: 2;
+                color: rgba(255, 255, 255, 1);
+            }
+            .slider-promo__item-up-to__under {
+                position: absolute;
+                z-index: 1;
+                top: 5px;
+                left: 5px;
+                color: rgba(83, 79, 210, 1);
+            }
+        }
+        
+        .slider-promo__item-60 {
+            position: relative;
+            z-index: 0;
+            font-size: 182px;
+            font-weight: 900;
+            letter-spacing: 0%;
+            top: 76px;
+            left: 476px;
+            line-height: 100%;
+            text-transform: lowercase;
+            .slider-promo__item-60__over {
+                position: absolute;
+                z-index: 2;
+                color: rgba(255, 255, 255, 1);
+            }
+            .slider-promo__item-60__under {
+                position: absolute;
+                z-index: 1;
+                top: 13px;
+                left: 13px;
+                color: rgba(83, 79, 210, 1);
+            }
+        }
+        .slider-promo__item-percent {
+            position: relative;
+            z-index: 0;
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 0%;
+            top: 197px;
+            left: 737px;
+            line-height: 100%;
+            text-transform: lowercase;
+            .slider-promo__item-percent__over {
+                position: absolute;
+                z-index: 2;
+                color: rgba(255, 255, 255, 1);
+            }
+            .slider-promo__item-percent__under {
+                position: absolute;
+                z-index: 1;
+                top: 5px;
+                left: 5px;
+                color: rgba(83, 79, 210, 1);
+            }
         }
     }
 
