@@ -1,25 +1,36 @@
-function getSlide(numberSlide: number = 0){
-    const slides: NodeList | null = document.querySelectorAll(".slider-promo__item");
+let currentSlide = 0;
 
-    slides.forEach((slide: object, index: number) => {
+function getSlide(index: number): void {
+  const slides: NodeListOf<HTMLElement> = document.querySelectorAll(".slider-promo__item");
+  const circles: NodeListOf<HTMLElement> = document.querySelectorAll(".slider-promo__circle-container-circle");
 
-        const htmlSlide = slide as HTMLElement;
-        htmlSlide.style.display = "none";
+  slides.forEach((slide, i) => {
+    slide.classList.remove("slider-promo__item--active", "slider-promo__item--prev");
 
-        if (index === numberSlide){
-            htmlSlide.style.display = "block";
-        }
-    });
+    if (i === index) {
+      slide.classList.add("slider-promo__item--active");
+    } else if (i === currentSlide) {
+      slide.classList.add("slider-promo__item--prev");
+    }
+  });
+
+  circles.forEach((circle, i) => {
+    circle.classList.toggle("slider-promo__circle-container-circle--active", i === index);
+  });
+
+  currentSlide = index;
 }
-getSlide();
-function navigationCircle(){
-    const circles: NodeList | null = document.querySelectorAll(".slider-promo__circle-container-circle");
 
-    circles.forEach((circle: object, index:number) => {
-        const htmlCircle = circle as HTMLElement;
-        htmlCircle.addEventListener('click', () => {
-            getSlide(index);
-        });
-})}
+function navigationCircle(): void {
+  const circles: NodeListOf<HTMLElement> = document.querySelectorAll(".slider-promo__circle-container-circle");
 
+  circles.forEach((circle, index) => {
+    circle.addEventListener("click", () => {
+      getSlide(index);
+    });
+  });
+}
+
+// инициализация
+getSlide(currentSlide);
 navigationCircle();
