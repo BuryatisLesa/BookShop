@@ -1,272 +1,299 @@
 @use "variables";
 
-.slider-promo__items {
-    padding: 0;
-    list-style: none;
+.slider-promo {
 
-    // слайд black-friday
-    .slider-promo__item {
-    position: relative;
-    overflow: hidden;
-    height: 702px;
-    max-width: 100%;
+    .slider-promo__circle-container {
+        display: flex;
+        gap: 10px;
+        padding: 5px;
+        margin-left: 29.5px;
+        margin-right: 29.5px;
+        justify-content: center;
+        align-items: center;
 
-        &--color-pink-1 {
-            background-color: variables.$bg-color-banner-1;
+        .slider-promo__circle-container-circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(239, 238, 246, 1);
+            cursor: pointer;
+
+            &--active {
+                background-color: rgba(158, 152, 220, 1);
+                }
+            }
         }
 
-        .slider-promo__item-confty svg {
-            position: absolute;
-            top: 22px;
-            left: 44px;
-            max-width: 1013px;
-            max-height: 545px;
-            z-index: 1;               
-            pointer-events: none; 
-        }
+    .slider-promo__items {
+        padding: 0;
+        list-style: none;
+
+        // слайд black-friday
+        .slider-promo__item {
+        position: relative;
+        overflow: hidden;
+        height: 702px;
+        max-width: 100%;
+
+            &--color-pink-1 {
+                background-color: variables.$bg-color-banner-1;
+            }
+
+            .slider-promo__item-confty svg {
+                position: absolute;
+                top: 22px;
+                left: 44px;
+                max-width: 1013px;
+                max-height: 545px;
+                z-index: 1;               
+                pointer-events: none; 
+            }
 
 
-        img {
-            position: absolute;
-            z-index: 2;
-            max-width: 1016px;
-            max-height: 452px;
-            top: 228px;
-            left: 52px;
-        }
-
-
-        h2, .slider-promo__item-up-to, .slider-promo__item-60, .slider-promo__item-percent {
-            position: absolute;
-            z-index: 3; 
-        }
-
-        .slider-promo__item-title {
-            font-size: 25px;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: 0%;
-            top: 49px;
-            left: 427px;
-            text-transform: uppercase;
-        }
-
-        .slider-promo__item-up-to {
-            position: relative;
-            z-index: 0;
-            font-size: 60px;
-            font-weight: 600;
-            letter-spacing: 0%;
-            top: 104px;
-            left: 308px;
-            line-height: 100%;
-            text-transform: lowercase;
-
-            .slider-promo__item-up-to__over {
+            img {
                 position: absolute;
                 z-index: 2;
-                color: rgba(255, 255, 255, 1);
+                max-width: 1016px;
+                max-height: 452px;
+                top: 228px;
+                left: 52px;
             }
 
-            .slider-promo__item-up-to__under {
+
+            h2, .slider-promo__item-up-to, .slider-promo__item-60, .slider-promo__item-percent {
                 position: absolute;
-                z-index: 1;
-                top: 5px;
-                left: 5px;
-                color: rgba(83, 79, 210, 1);
+                z-index: 3; 
             }
+
+            .slider-promo__item-title {
+                font-size: 25px;
+                font-weight: 600;
+                line-height: 100%;
+                letter-spacing: 0%;
+                top: 49px;
+                left: 427px;
+                text-transform: uppercase;
+            }
+
+            .slider-promo__item-up-to {
+                position: relative;
+                z-index: 0;
+                font-size: 60px;
+                font-weight: 600;
+                letter-spacing: 0%;
+                top: 104px;
+                left: 308px;
+                line-height: 100%;
+                text-transform: lowercase;
+
+                .slider-promo__item-up-to__over {
+                    position: absolute;
+                    z-index: 2;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                .slider-promo__item-up-to__under {
+                    position: absolute;
+                    z-index: 1;
+                    top: 5px;
+                    left: 5px;
+                    color: rgba(83, 79, 210, 1);
+                }
+            }
+            
+            .slider-promo__item-60 {
+                position: relative;
+                z-index: 0;
+                font-size: 182px;
+                font-weight: 900;
+                letter-spacing: 0%;
+                top: 76px;
+                left: 476px;
+                line-height: 100%;
+                text-transform: lowercase;
+
+                .slider-promo__item-60__over {
+                    position: absolute;
+                    z-index: 2;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                .slider-promo__item-60__under {
+                    position: absolute;
+                    z-index: 1;
+                    top: 13px;
+                    left: 13px;
+                    color: rgba(83, 79, 210, 1);
+                }
+            }
+            .slider-promo__item-percent {
+                position: relative;
+                z-index: 0;
+                font-size: 60px;
+                font-weight: 700;
+                letter-spacing: 0%;
+                top: 197px;
+                left: 737px;
+                line-height: 100%;
+                text-transform: lowercase;
+
+                .slider-promo__item-percent__over {
+                    position: absolute;
+                    z-index: 2;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                .slider-promo__item-percent__under {
+                    position: absolute;
+                    z-index: 1;
+                    top: 5px;
+                    left: 5px;
+                    color: rgba(83, 79, 210, 1);
+                }
+            }
+
+            // второй слайд
+            .slider-promo__item-image--bg-image {
+                position: relative;
+                z-index: 0;
+                max-width: 100%;
+                max-height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .slider-promo__item-top {
+                position: absolute;
+                z-index: 0;
+                font-size: 60px;
+                font-weight: 700;
+                letter-spacing: 0%;
+                top: 73px;
+                left: 103px;
+                line-height: 100%;
+                text-transform: lowercase;
+
+                .slider-promo__item-top__over {
+                    position: absolute;
+                    z-index: 2;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                .slider-promo__item-top__under {
+                    position: absolute;
+                    z-index: 1;
+                    top: 5px;
+                    left: 5px;
+                    color: rgba(83, 79, 210, 1);
+                }
+            }
+            .slider-promo__item-ten {
+                position: absolute;
+                z-index: 0;
+                font-size: 160px;
+                font-weight: 900;
+                letter-spacing: 0%;
+                top: 112px;
+                left: 103px;
+                line-height: 100%;
+                text-transform: uppercase;
+
+                .slider-promo__item-ten__over {
+                    position: absolute;
+                    z-index: 2;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                .slider-promo__item-ten__under {
+                    position: absolute;
+                    z-index: 1;
+                    top: 13px;
+                    left: 11px;
+                    color: rgba(83, 79, 210, 1);
+                }
+            }
+            .slider-promo__item-books {
+                position: absolute;
+                z-index: 0;
+                font-size: 60px;
+                font-weight: 700;
+                letter-spacing: 0%;
+                top: 214px;
+                left: 307px;
+                line-height: 100%;
+                text-transform: lowercase;
+
+                .slider-promo__item-books__over {
+                    position: absolute;
+                    z-index: 2;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                .slider-promo__item-books__under {
+                    position: absolute;
+                    z-index: 1;
+                    top: 5px;
+                    left: 5px;
+                    color: rgba(83, 79, 210, 1);
+                }
+            }
+            .slider-promo__item-for-entrepreneurs {
+                position: absolute;
+                z-index: 0;
+                font-size: 25px;
+                font-weight: 600;
+                letter-spacing: 0%;
+                top: 243px;
+                left: 767px;
+                line-height: 100%;
+                text-transform:uppercase;
+                color: rgba(28, 42, 57, 1);
+            }
+
+            .slider-promo__item-checkout {
+                position:absolute;
+                z-index: 1;
+                font-size: 45px;
+                font-weight: 600;
+                line-height: 100%;
+                letter-spacing: 0%;
+                top: 148px;
+                left: 425px;
+                text-transform: uppercase;
+                color: rgba(28, 42, 57, 1);
+            }
+
+            .slider-promo__item-our {
+                position: absolute;
+                z-index: 0;
+                font-size: 90px;
+                font-weight: 900;
+                letter-spacing: 0%;
+                top: 233px;
+                left: 295px;
+                line-height: 100%;
+                text-transform: uppercase;
+                text-align: center;
+                word-wrap: break-word;
+                max-width: 653px;
+
+                .slider-promo__item-our__over {
+                    position: absolute;
+                    z-index: 2;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                .slider-promo__item-our__under {
+                    position: absolute;
+                    z-index: 1;
+                    top: 12px;
+                    left: 9px;
+                    color: rgba(123, 16, 16, 1);
+                }
+            }
+
         }
-        
-        .slider-promo__item-60 {
-            position: relative;
-            z-index: 0;
-            font-size: 182px;
-            font-weight: 900;
-            letter-spacing: 0%;
-            top: 76px;
-            left: 476px;
-            line-height: 100%;
-            text-transform: lowercase;
-
-            .slider-promo__item-60__over {
-                position: absolute;
-                z-index: 2;
-                color: rgba(255, 255, 255, 1);
-            }
-
-            .slider-promo__item-60__under {
-                position: absolute;
-                z-index: 1;
-                top: 13px;
-                left: 13px;
-                color: rgba(83, 79, 210, 1);
-            }
-        }
-        .slider-promo__item-percent {
-            position: relative;
-            z-index: 0;
-            font-size: 60px;
-            font-weight: 700;
-            letter-spacing: 0%;
-            top: 197px;
-            left: 737px;
-            line-height: 100%;
-            text-transform: lowercase;
-
-            .slider-promo__item-percent__over {
-                position: absolute;
-                z-index: 2;
-                color: rgba(255, 255, 255, 1);
-            }
-
-            .slider-promo__item-percent__under {
-                position: absolute;
-                z-index: 1;
-                top: 5px;
-                left: 5px;
-                color: rgba(83, 79, 210, 1);
-            }
-        }
-
-        // второй слайд
-        .slider-promo__item-image--bg-image {
-            position: relative;
-            z-index: 0;
-            max-width: 100%;
-            max-height: 100%;
-            top: 0;
-            left: 0;
-        }
-
-        .slider-promo__item-top {
-            position: absolute;
-            z-index: 0;
-            font-size: 60px;
-            font-weight: 700;
-            letter-spacing: 0%;
-            top: 73px;
-            left: 103px;
-            line-height: 100%;
-            text-transform: lowercase;
-
-            .slider-promo__item-top__over {
-                position: absolute;
-                z-index: 2;
-                color: rgba(255, 255, 255, 1);
-            }
-
-            .slider-promo__item-top__under {
-                position: absolute;
-                z-index: 1;
-                top: 5px;
-                left: 5px;
-                color: rgba(83, 79, 210, 1);
-            }
-         }
-        .slider-promo__item-ten {
-            position: absolute;
-            z-index: 0;
-            font-size: 160px;
-            font-weight: 900;
-            letter-spacing: 0%;
-            top: 112px;
-            left: 103px;
-            line-height: 100%;
-            text-transform: uppercase;
-
-            .slider-promo__item-ten__over {
-                position: absolute;
-                z-index: 2;
-                color: rgba(255, 255, 255, 1);
-            }
-
-            .slider-promo__item-ten__under {
-                position: absolute;
-                z-index: 1;
-                top: 13px;
-                left: 11px;
-                color: rgba(83, 79, 210, 1);
-            }
-         }
-        .slider-promo__item-books {
-            position: absolute;
-            z-index: 0;
-            font-size: 60px;
-            font-weight: 700;
-            letter-spacing: 0%;
-            top: 214px;
-            left: 307px;
-            line-height: 100%;
-            text-transform: lowercase;
-
-            .slider-promo__item-books__over {
-                position: absolute;
-                z-index: 2;
-                color: rgba(255, 255, 255, 1);
-            }
-
-            .slider-promo__item-books__under {
-                position: absolute;
-                z-index: 1;
-                top: 5px;
-                left: 5px;
-                color: rgba(83, 79, 210, 1);
-            }
-         }
-        .slider-promo__item-for-entrepreneurs {
-            position: absolute;
-            z-index: 0;
-            font-size: 25px;
-            font-weight: 600;
-            letter-spacing: 0%;
-            top: 243px;
-            left: 767px;
-            line-height: 100%;
-            text-transform:uppercase;
-            color: rgba(28, 42, 57, 1);
-         }
-
-         .slider-promo__item-checkout {
-            position:absolute;
-            z-index: 1;
-            font-size: 45px;
-            font-weight: 600;
-            line-height: 100%;
-            letter-spacing: 0%;
-            top: 148px;
-            left: 425px;
-            text-transform: uppercase;
-            color: rgba(28, 42, 57, 1);
-         }
-
-        .slider-promo__item-our {
-            position: absolute;
-            z-index: 0;
-            font-size: 90px;
-            font-weight: 900;
-            letter-spacing: 0%;
-            top: 233px;
-            left: 295px;
-            line-height: 100%;
-            text-transform: uppercase;
-            text-align: center;
-            word-wrap: break-word;
-            max-width: 653px;
-
-            .slider-promo__item-our__over {
-                position: absolute;
-                z-index: 2;
-                color: rgba(255, 255, 255, 1);
-            }
-
-            .slider-promo__item-our__under {
-                position: absolute;
-                z-index: 1;
-                top: 12px;
-                left: 9px;
-                color: rgba(123, 16, 16, 1);
-            }
-        }
-
     }
+
 }
+
