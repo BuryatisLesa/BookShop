@@ -35,31 +35,51 @@ interface Book {
   saleInfo: SaleInfo;
 }
 
-export async function getData() {
-    const urlBooks: any = await fetch(`https://www.googleapis.com/books/v1/volumes?q="subject:Business"&key=${apiKey}&printType=books&startIndex=0&maxResults=6&langRestrict=en`)
+
+interface BookItem {
+  id: number;
+  title: string;
+  authors: object;
+  image: string;
+  description: string;
+  averageRating: number;
+  ratingsCount: number;
+  categories:Categories;
+  country: string;
+  saleInfo: SaleInfo;
+  isEbook: boolean;
+}
+
+export async function getData(): Promise<BookItem[]> {
+    const urlBooks: Response = await fetch(
+        `https://www.googleapis.com/books/v1/volumes?q="subject:Business"&key=${apiKey}&printType=books&startIndex=0&maxResults=6&langRestrict=en`
+    );
+
     try {
         if (!urlBooks.ok){
             throw new Error("Таких данных нету!");
         }
-        let jsonData: any = await urlBooks.json();
-        jsonData.items.forEach((book: Book, index: number) => {
-            console.log(`Книга ${index + 1}:`);
-            console.log('  Title:', book.volumeInfo.title);
-            console.log('  Authors:', book.volumeInfo.authors?.join(', ') || 'Не указаны');
-            console.log('  Thumbnail:', book.volumeInfo.imageLinks?.thumbnail || 'Нет изображения');
-            console.log('  Description:', book.volumeInfo.description || 'Нет описания');
-            console.log('  Average Rating:', book.volumeInfo.averageRating || 'Нет рейтинга');
-            console.log('  Ratings Count:', book.volumeInfo.ratingsCount || 'Нет оценок');
-            console.log('  Categories:', book.volumeInfo.categories || 'Нет категории');
-            console.log('  Country:', book.saleInfo.country);
-            console.log('  Saleability:', book.saleInfo.saleability);
-            console.log('  Is Ebook:', book.saleInfo.isEbook);
-            });
 
-    } catch (e:any) {
-        console.log(e.message, "Блок отработал с ошибкой!")
-    };
-};
+        const jsonData: any = await urlBooks.json();
+        const dataBooks: BookItem[] = jsonData.items.map((book: Book, index: number) => ({
+            id: index + 1,
+            title: book.volumeInfo.title || "Нет названия",
+            authors: book.volumeInfo.authors || [],
+            image: book.volumeInfo.imageLinks?.thumbnail || "",
+            description: book.volumeInfo.description || "Нет описания",
+            averageRating: book.volumeInfo.averageRating || 0,
+            ratingsCount: book.volumeInfo.ratingsCount || 0,
+            categories: book.volumeInfo.categories,
+            country: book.saleInfo.country,
+            saleInfo: book.saleInfo,
+            isEbook: book.saleInfo.isEbook,
+        }));
 
+        return dataBooks;
 
-getData();
+    } catch (e: any) {
+        console.log(e.message, "Блок отработал с ошибкой!");
+        return [];
+    }
+}
+

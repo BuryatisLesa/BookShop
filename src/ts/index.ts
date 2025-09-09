@@ -5,4 +5,8 @@ import '../scss/books.scss';
 getSlide(currentSlide);
 navigationCircle();
 startAutoSlide();
-// getData();
+
+(async () => {
+    const books = await getData();
+    console.log(books);
+})();
