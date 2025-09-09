@@ -374,6 +374,7 @@ html, body {
   color: rgb(28, 42, 57);
   text-align: left;
   max-width: 109px;
+  white-space: wrap;
 }
 .layout .top-card .top-card__change-book .top-card__change-book-arrow {
   position: absolute;
@@ -405,6 +406,7 @@ html, body {
   color: rgb(28, 42, 57);
   text-align: left;
   max-width: 69px;
+  white-space: wrap;
 }
 .layout .top-card .top-card__top-100 .top-card__top-100-arrow {
   position: absolute;

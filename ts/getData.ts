@@ -43,7 +43,7 @@ async function getData() {
             throw new Error("Таких данных нету!");
         }
         let jsonData: any = await urlBooks.json();
-        jsonData.items.forEach((book: Book, index:number) => {
+        jsonData.items.forEach((book: Book, index: number) => {
             console.log(`Книга ${index + 1}:`);
             console.log('  Title:', book.volumeInfo.title);
             console.log('  Authors:', book.volumeInfo.authors?.join(', ') || 'Не указаны');
