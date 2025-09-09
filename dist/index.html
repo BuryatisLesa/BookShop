@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<script defer src="js/bundle.js"></script><link href="css/styles.css" rel="stylesheet"></head>
+<body>
+    <div class="layout">
+        <header>
+            <!--Logo-->
+            <div class="header__logo">Bookshop</div>
+
+            <!--Header menu-->
+            <nav class="header__menu">
+                <ul class="header__menu-items">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link header__menu-link--active">books</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">audiobooks</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Stationery & gifts</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--Header user-menu-->
+            <nav class="header__user-menu">
+                <button class="header__user-menu-item header__user-menu-item-login">
+                <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_24_12" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9 5.65685 7.65685 7 6 7C4.34315 7 3 5.65685 3 4C3 2.34315 4.34315 1 6 1C7.65685 1 9 2.34315 9 4ZM10 4C10 6.20914 8.20914 8 6 8C3.79086 8 2 6.20914 2 4C2 1.79086 3.79086 0 6 0C8.20914 0 10 1.79086 10 4ZM1 13C1 11.3431 2.34315 10 4 10H8C9.65685 10 11 11.3431 11 13V14H1V13ZM0 13C0 10.7909 1.79086 9 4 9H8C10.2091 9 12 10.7909 12 13V15H0V13Z"/>
+                </mask>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 4C9 5.65685 7.65685 7 6 7C4.34315 7 3 5.65685 3 4C3 2.34315 4.34315 1 6 1C7.65685 1 9 2.34315 9 4ZM10 4C10 6.20914 8.20914 8 6 8C3.79086 8 2 6.20914 2 4C2 1.79086 3.79086 0 6 0C8.20914 0 10 1.79086 10 4ZM1 13C1 11.3431 2.34315 10 4 10H8C9.65685 10 11 11.3431 11 13V14H1V13ZM0 13C0 10.7909 1.79086 9 4 9H8C10.2091 9 12 10.7909 12 13V15H0V13Z" fill="#1C2A39"/>
+                <path d="M11 14V15H12V14H11ZM1 14H0V15H1V14ZM12 15V16H13V15H12ZM0 15H-1V16H0V15ZM6 8C8.20914 8 10 6.20914 10 4H8C8 5.10457 7.10457 6 6 6V8ZM2 4C2 6.20914 3.79086 8 6 8V6C4.89543 6 4 5.10457 4 4H2ZM6 0C3.79086 0 2 1.79086 2 4H4C4 2.89543 4.89543 2 6 2V0ZM10 4C10 1.79086 8.20914 0 6 0V2C7.10457 2 8 2.89543 8 4H10ZM6 9C8.76142 9 11 6.76142 11 4H9C9 5.65685 7.65685 7 6 7V9ZM1 4C1 6.76142 3.23858 9 6 9V7C4.34315 7 3 5.65685 3 4H1ZM6 -1C3.23858 -1 1 1.23858 1 4H3C3 2.34315 4.34315 1 6 1V-1ZM11 4C11 1.23858 8.76142 -1 6 -1V1C7.65685 1 9 2.34315 9 4H11ZM4 9C1.79086 9 0 10.7909 0 13H2C2 11.8954 2.89543 11 4 11V9ZM8 9H4V11H8V9ZM12 13C12 10.7909 10.2091 9 8 9V11C9.10457 11 10 11.8954 10 13H12ZM12 14V13H10V14H12ZM1 15H11V13H1V15ZM0 13V14H2V13H0ZM4 8C1.23858 8 -1 10.2386 -1 13H1C1 11.3431 2.34315 10 4 10V8ZM8 8H4V10H8V8ZM13 13C13 10.2386 10.7614 8 8 8V10C9.65685 10 11 11.3431 11 13H13ZM13 15V13H11V15H13ZM0 16H12V14H0V16ZM-1 13V15H1V13H-1Z" fill="#1C2A39" mask="url(#path-1-inside-1_24_12)"/>
+                </svg>
+                </button>
+                <button class="header__user-menu-item header__user-menu-item-search">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.5C12 9.53757 9.53757 12 6.5 12C3.46243 12 1 9.53757 1 6.5C1 3.46243 3.46243 1 6.5 1C9.53757 1 12 3.46243 12 6.5ZM10.8845 11.2986C9.72859 12.3554 8.18957 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 8.04017 12.4643 9.45523 11.5691 10.569L15 13.9999L14.2929 14.707L10.8845 11.2986Z" fill="#1C2A39"/>
+                </svg>
+                </button>
+                <button class="header__user-menu-item header__user-menu-item-cart">
+                <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_1_422" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00003 1H8.00003C9.1046 1 10 1.89543 10 3V5H4.00003V3C4.00003 1.89543 4.89546 1 6.00003 1ZM3.00003 5V3C3.00003 1.34315 4.34318 0 6.00003 0H8.00003C9.65689 0 11 1.34315 11 3V5H11.2162C12.2606 5 13.1292 5.80364 13.2102 6.84491L13.8324 14.8449C13.9228 16.0071 13.0041 17 11.8384 17H2.16162C0.995926 17 0.0772501 16.0071 0.167642 14.8449L0.789865 6.84491C0.870853 5.80364 1.73942 5 2.78384 5H3.00003ZM11 6H3.00003H2.78384C2.26163 6 1.82735 6.40182 1.78685 6.92245L1.16463 14.9225C1.11944 15.5035 1.57877 16 2.16162 16H11.8384C12.4213 16 12.8806 15.5035 12.8354 14.9225L12.2132 6.92246C12.1727 6.40182 11.7384 6 11.2162 6H11Z"/>
+                </mask>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00003 1H8.00003C9.1046 1 10 1.89543 10 3V5H4.00003V3C4.00003 1.89543 4.89546 1 6.00003 1ZM3.00003 5V3C3.00003 1.34315 4.34318 0 6.00003 0H8.00003C9.65689 0 11 1.34315 11 3V5H11.2162C12.2606 5 13.1292 5.80364 13.2102 6.84491L13.8324 14.8449C13.9228 16.0071 13.0041 17 11.8384 17H2.16162C0.995926 17 0.0772501 16.0071 0.167642 14.8449L0.789865 6.84491C0.870853 5.80364 1.73942 5 2.78384 5H3.00003ZM11 6H3.00003H2.78384C2.26163 6 1.82735 6.40182 1.78685 6.92245L1.16463 14.9225C1.11944 15.5035 1.57877 16 2.16162 16H11.8384C12.4213 16 12.8806 15.5035 12.8354 14.9225L12.2132 6.92246C12.1727 6.40182 11.7384 6 11.2162 6H11Z" fill="#1C2A39"/>
+                <path d="M10 5V6H11V5H10ZM4.00003 5H3.00003V6H4.00003V5ZM3.00003 5V6H4.00003V5H3.00003ZM11 5H10V6H11V5ZM13.2102 6.84491L14.2072 6.76737L13.2102 6.84491ZM13.8324 14.8449L12.8354 14.9225L13.8324 14.8449ZM0.167642 14.8449L-0.829347 14.7674H-0.829347L0.167642 14.8449ZM0.789865 6.84491L-0.207124 6.76737L0.789865 6.84491ZM1.78685 6.92245L0.789865 6.84491L1.78685 6.92245ZM1.16463 14.9225L0.167642 14.8449H0.167642L1.16463 14.9225ZM12.8354 14.9225L11.8384 15V15L12.8354 14.9225ZM12.2132 6.92246L11.2162 7L12.2132 6.92246ZM8.00003 0H6.00003V2H8.00003V0ZM11 3C11 1.34315 9.65689 0 8.00003 0V2C8.55232 2 9.00003 2.44772 9.00003 3H11ZM11 5V3H9.00003V5H11ZM10 4H4.00003V6H10V4ZM3.00003 3V5H5.00003V3H3.00003ZM6.00003 0C4.34318 0 3.00003 1.34315 3.00003 3H5.00003C5.00003 2.44772 5.44775 2 6.00003 2V0ZM2.00003 3V5H4.00003V3H2.00003ZM6.00003 -1C3.79089 -1 2.00003 0.790861 2.00003 3H4.00003C4.00003 1.89543 4.89546 1 6.00003 1V-1ZM8.00003 -1H6.00003V1H8.00003V-1ZM12 3C12 0.790861 10.2092 -1 8.00003 -1V1C9.1046 1 10 1.89543 10 3H12ZM12 5V3H10V5H12ZM11.2162 4H11V6H11.2162V4ZM14.2072 6.76737C14.0857 5.20546 12.7828 4 11.2162 4V6C11.7384 6 12.1727 6.40182 12.2132 6.92246L14.2072 6.76737ZM14.8294 14.7674L14.2072 6.76737L12.2132 6.92246L12.8354 14.9225L14.8294 14.7674ZM11.8384 18C13.587 18 14.965 16.5106 14.8294 14.7674L12.8354 14.9225C12.8806 15.5035 12.4213 16 11.8384 16V18ZM2.16162 18H11.8384V16H2.16162V18ZM-0.829347 14.7674C-0.964935 16.5106 0.41308 18 2.16162 18V16C1.57877 16 1.11944 15.5035 1.16463 14.9225L-0.829347 14.7674ZM-0.207124 6.76737L-0.829347 14.7674L1.16463 14.9225L1.78685 6.92245L-0.207124 6.76737ZM2.78384 4C1.21721 4 -0.0856421 5.20545 -0.207124 6.76737L1.78685 6.92245C1.82735 6.40182 2.26163 6 2.78384 6V4ZM3.00003 4H2.78384V6H3.00003V4ZM11 5H3.00003V7H11V5ZM3.00003 5H2.78384V7H3.00003V5ZM2.78384 5C1.73942 5 0.870853 5.80364 0.789865 6.84491L2.78384 7L2.78384 7V5ZM0.789865 6.84491L0.167642 14.8449L2.16162 15L2.78384 7L0.789865 6.84491ZM0.167642 14.8449C0.0772504 16.0071 0.995926 17 2.16162 17V15H2.16162L0.167642 14.8449ZM2.16162 17H11.8384V15H2.16162V17ZM11.8384 17C13.0041 17 13.9228 16.0071 13.8324 14.8449L11.8384 15L11.8384 15V17ZM13.8324 14.8449L13.2102 6.84491L11.2162 7L11.8384 15L13.8324 14.8449ZM13.2102 6.84491C13.1292 5.80364 12.2606 5 11.2162 5V7H11.2162L13.2102 6.84491ZM11.2162 5H11V7H11.2162V5Z" fill="#1C2A39" mask="url(#path-1-inside-1_1_422)"/>
+                </svg>
+                </button>
+            </nav>
+        </header>
+        <section class="slider-promo">
+            <ul class="slider-promo__items">
+                <li class="slider-promo__item slider-promo__item--color-pink-1 slider-promo__item--active">
+                    <div class="slider-promo__item-confty">
+                    <svg width="1012" height="608" viewBox="0 0 1012 608" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M702.615 6.96068C703.747 1.8935 709.332 -0.76947 713.982 1.54033L734.44 11.7025C737.817 13.3801 739.565 17.1885 738.633 20.8428L733.669 40.3231C732.537 44.7649 727.912 47.3493 723.536 45.9851L702.859 39.5392C698.885 38.3002 696.525 34.2201 697.432 30.1573L702.615 6.96068ZM29.8266 72.0202C27.8811 76.8396 30.9757 82.2056 36.1215 82.9355L89.0278 90.4399C93.2231 91.035 97.1548 88.2556 97.9931 84.102L105.865 45.1019C106.759 40.6707 103.807 36.3791 99.3488 35.6298L54.3385 28.0648C50.6362 27.4425 46.9993 29.4783 45.5941 32.9596L29.8266 72.0202ZM918.994 201.968C917.163 206.828 920.376 212.118 925.533 212.733L989.973 220.419C994.087 220.91 997.894 218.179 998.748 214.124L1011.49 153.644C1012.44 149.142 1009.4 144.77 1004.85 144.084L950.646 135.916C946.914 135.354 943.298 137.475 941.967 141.005L918.994 201.968ZM296.628 329.366C295.679 334.47 290.193 337.332 285.464 335.19L220.073 305.583C216.637 304.028 214.755 300.285 215.554 296.599L229.007 234.592C229.979 230.112 234.509 227.363 238.931 228.57L304.582 246.48C308.598 247.576 311.103 251.568 310.341 255.661L296.628 329.366ZM55.682 602.255C57.7777 607.12 63.9369 608.641 68.0568 605.312L104.845 575.589C107.864 573.15 108.697 568.896 106.821 565.499L69.0063 497.017C66.6752 492.795 61.1666 491.58 57.276 494.43L25.8944 517.414C22.8855 519.617 21.7986 523.608 23.2743 527.033L55.682 602.255ZM765.603 426.139C761.347 429.119 755.425 427.315 753.552 422.47L746.175 403.377C744.814 399.857 746.099 395.865 749.257 393.799L762.669 385.025C766.527 382.501 771.715 383.752 773.998 387.757L783.633 404.653C785.679 408.242 784.656 412.799 781.271 415.169L765.603 426.139ZM985.035 599.347C990.327 599.521 994.324 594.598 993.069 589.455L981.625 542.575C980.577 538.282 976.248 535.652 971.955 536.7L953.062 541.313C948.823 542.348 946.195 546.59 947.156 550.847L956.545 592.427C957.348 595.979 960.447 598.541 964.087 598.661L985.035 599.347ZM39.5604 178.804C39.4532 173.613 34.5062 169.898 29.4911 171.242L6.53281 177.395C2.51167 178.473 -0.0108771 182.454 0.732295 186.551L4.59868 207.861C5.41696 212.371 9.85 215.273 14.3108 214.218L33.8744 209.593C37.5443 208.725 40.1099 205.413 40.032 201.643L39.5604 178.804Z" fill="#FFE6E7"/>
+                    </svg>
+                    <div class="slider-promo__item-triangle">                    <svg width="1014" height="546" viewBox="0 0 1014 546" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M642.796 2.84931L638.688 0L629 13.9696L633.109 16.8189L642.796 2.84931ZM111.121 17L116.082 17.6239L113.961 34.4911L109 33.8671L111.121 17ZM29.7224 39L32.2224 43.3301L17.5 51.8301L15 47.5L29.7224 39ZM231.688 134L235.796 136.849L226.109 150.819L222 147.97L231.688 134ZM178.082 79.6239L173.121 79L171 95.8671L175.961 96.4911L178.082 79.6239ZM3.56267 94.0001L0 97.5083L11.9279 109.621L15.4905 106.113L3.56267 94.0001ZM803.722 146L806.222 150.33L791.5 158.83L789 154.5L803.722 146ZM1013.22 37.3301L1010.72 33L996 41.5L998.5 45.8301L1013.22 37.3301ZM955.121 198L960.082 198.624L957.961 215.491L953 214.867L955.121 198ZM1007.08 410.624L1002.12 410L1000 426.867L1004.96 427.491L1007.08 410.624ZM821 277.508L824.563 274L836.491 286.113L832.928 289.621L821 277.508ZM675.563 290L672 293.508L683.928 305.621L687.491 302.113L675.563 290ZM175.397 207.537L173 203.149L187.92 195L190.316 199.388L175.397 207.537ZM93.3844 216.228L98.3291 216.969L100.849 200.157L95.9046 199.416L93.3844 216.228ZM4.94476 181.553L1.2517e-05 180.812L2.52023 164L7.46498 164.741L4.94476 181.553ZM463 373.812L467.945 374.553L470.465 357.741L465.52 357L463 373.812ZM524.308 541.004L521.736 545.292L507.157 536.549L509.729 532.261L524.308 541.004ZM274.638 200.815L278.282 197.392L266.645 185L263 188.423L274.638 200.815ZM378.303 29L382.412 31.8493L372.724 45.8189L368.616 42.9696L378.303 29ZM363.397 200.537L361 196.149L375.92 188L378.316 192.388L363.397 200.537ZM229 39.149L231.397 43.5371L246.316 35.3881L243.92 31L229 39.149ZM288.945 97.9692L284 97.228L286.52 80.4158L291.465 81.1571L288.945 97.9692ZM459.638 52.8149L463.282 49.3921L451.645 37L448 40.4228L459.638 52.8149ZM102.093 418.542L97 417.823L99.5162 401L104.609 401.719L102.093 418.542ZM29.2285 344.308L25.007 341.449L15 355.394L19.2215 358.254L29.2285 344.308ZM140 264.541L144.896 263L150.287 279.173L145.391 280.713L140 264.541ZM516.896 281L512 282.541L517.391 298.713L522.287 297.173L516.896 281ZM873.397 51.5371L871 47.149L885.92 39L888.316 43.3881L873.397 51.5371ZM930.15 121.299L935.139 120.961L933.989 104L929 104.338L930.15 121.299ZM782.329 49.9692L777.384 49.228L779.905 32.4158L784.849 33.1571L782.329 49.9692ZM697.938 151.101L700.374 146.734L685.527 138.453L683.091 142.819L697.938 151.101ZM961.945 523.553L957 522.812L959.52 506L964.465 506.741L961.945 523.553ZM859.896 188L855 189.541L860.391 205.713L865.287 204.173L859.896 188ZM750 335.541L754.896 334L760.287 350.173L755.391 351.713L750 335.541ZM254.788 464L253 468.688L269.408 474.594L271.195 469.905L254.788 464ZM254.225 297.696L257.916 294.296L269.97 306.897L266.28 310.297L254.225 297.696ZM282.1 310.632L280.444 305.895L264.095 311.962L265.752 316.698L282.1 310.632Z" fill="#FFEFF0"/>
+                    </svg></div>
+                    </div>
+                    <img class="slider-promo__item-image" src="./media/slider/banner_black-friday/illustration.svg" alt="black friday">
+                    <h2 class="slider-promo__item-title">Black friday sale</h2>
+                    <div class="slider-promo__item-up-to">
+                        <span class="slider-promo__item-up-to__over">up to</span>
+                        <span class="slider-promo__item-up-to__under">up to</span>
+                    </div>
+                    <div class="slider-promo__item-60">
+                        <span class="slider-promo__item-60__over">60</span>
+                        <span class="slider-promo__item-60__under">60</span>
+                    </div>
+                    <div class="slider-promo__item-percent">
+                        <span class="slider-promo__item-percent__over">%</span>
+                        <span class="slider-promo__item-percent__under">%</span>
+                    </div>
+                </li>
+                <li class="slider-promo__item">
+                    <img class="slider-promo__item-image slider-promo__item-image--bg-image" src="./media/slider/banner_top_10/business-competition-concept-vector-illustration-businessman-top-pf-mountain-competitive-businessmen-climb-up-people-178097024 1.png" alt="top-10">
+                    <div class="slider-promo__item-top">
+                        <span class="slider-promo__item-top__over">top</span>
+                        <span class="slider-promo__item-top__under">top</span>
+                    </div>
+                    <div class="slider-promo__item-ten">
+                        <span class="slider-promo__item-ten__over">10</span>
+                        <span class="slider-promo__item-ten__under">10</span>
+                    </div>
+                    <div class="slider-promo__item-books">
+                        <span class="slider-promo__item-books__over">books</span>
+                        <span class="slider-promo__item-books__under">books</span>
+                    </div>
+                    <div class="slider-promo__item-for-entrepreneurs">
+                        <span class="slider-promo__item-for-enterepreneurs__over">for entrepreneurs</span>
+                    </div>
+                </li>
+                <li class="slider-promo__item">
+                    <img class="slider-promo__item-image slider-promo__item-image--bg-image" src="./media/slider/banner_check_out/autumn-seamless-pattern-with-colorful-leaves-vector-repeated-elements-cartoon-style_505988-77 1.png" alt="top-10">
+                    <h2 class="slider-promo__item-checkout">check out</h2>
+                    <div class="slider-promo__item-our">
+                        <span class="slider-promo__item-our__over">OUR cozy books Selection</span>
+                        <span class="slider-promo__item-our__under">OUR cozy books Selection</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="slider-promo__circle-container">
+                <div class="slider-promo__circle-container-circle"></div>
+                <div class="slider-promo__circle-container-circle"></div>
+                <div class="slider-promo__circle-container-circle"></div>
+            </div>
+        </section>
+        <div class="top-card">
+            <div class="top-card__change-book">
+                <a href="#" class="top-card__change-book-title">Change old book on new</a>
+                <div class="top-card__change-book-arrow">
+                    <svg width="57" height="14" viewBox="0 0 57 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7H54" stroke="#1C2A39" stroke-width="2"/>
+                    <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="top-card__top-100">
+                <a href="#" class="top-card__top-100-title">
+                    top 100 books 2022
+                </a>
+                <div class="top-card__top-100-arrow">
+                    <svg width="57" height="14" viewBox="0 0 57 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 7H54" stroke="#1C2A39" stroke-width="2"/>
+                    <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <aside class="nav-categories">
+            <ul class="nav-categories__items">
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Architecture</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Art & Fashion</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Biography</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Business</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Crafts & Hobbies</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Drama</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Fiction</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Food & Drink</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Health & Wellbeing</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">History & Politics</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Humor</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Poetry</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Psychology</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Science</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Technology</a>
+                </li>
+                <li class="nav-categories__item">
+                    <a href="#" class="nav-categories__link">Travel & Maps</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="books-content"></main>
+        <footer></footer>
+    </div>
+</body>
+</html>

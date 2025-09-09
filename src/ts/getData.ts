@@ -1,10 +1,9 @@
-import * as dotenv from "dotenv";
-import * as path from "path";
+// import * as dotenv from "dotenv";
+// import * as path from "path";
 
-dotenv.config({ path: path.resolve(__dirname, "../.env") });
+// dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 const apiKey = process.env.API_KEY!;
-console.log("API Key:", apiKey);
 
 
 interface SaleInfo {
@@ -36,7 +35,7 @@ interface Book {
   saleInfo: SaleInfo;
 }
 
-async function getData() {
+export async function getData() {
     const urlBooks: any = await fetch(`https://www.googleapis.com/books/v1/volumes?q="subject:Business"&key=${apiKey}&printType=books&startIndex=0&maxResults=6&langRestrict=en`)
     try {
         if (!urlBooks.ok){

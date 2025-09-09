@@ -1,3 +1,6 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/books.scss ***!
+  \**************************************************************************************************************/
 .slider-promo {
   position: relative;
   overflow: hidden;
@@ -414,5 +417,3 @@ html, body {
   top: 241px;
   left: 21px;
 }
-
-/*# sourceMappingURL=books.css.map */

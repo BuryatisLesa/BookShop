@@ -1,7 +1,7 @@
-let currentSlide = 0;
+export let currentSlide = 0;
 let slideInterval: number;
 
-function getSlide(index: number): void {
+export function getSlide(index: number): void {
   const slides: NodeListOf<HTMLElement> = document.querySelectorAll(".slider-promo__item");
   const circles: NodeListOf<HTMLElement> = document.querySelectorAll(".slider-promo__circle-container-circle");
 
@@ -22,7 +22,7 @@ function getSlide(index: number): void {
   currentSlide = index;
 }
 
-function navigationCircle(): void {
+export function navigationCircle(): void {
   const circles: NodeListOf<HTMLElement> = document.querySelectorAll(".slider-promo__circle-container-circle");
 
   circles.forEach((circle, index) => {
@@ -39,7 +39,7 @@ function autoSlide(): void {
   getSlide(nextSlide);
 }
 
-function startAutoSlide(): void {
+export function startAutoSlide(): void {
   slideInterval = window.setInterval(autoSlide, 5000); // каждые 5 секунд
 }
 
@@ -48,7 +48,10 @@ function resetAutoSlide(): void {
   startAutoSlide();
 }
 
-// запуск
+
 getSlide(currentSlide);
 navigationCircle();
 startAutoSlide();
+
+
+
