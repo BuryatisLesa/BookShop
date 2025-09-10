@@ -1,0 +1,36 @@
+.nav-categories{
+    position: absolute;
+    z-index: 0;
+    padding: 45px 152px 81px 138px;
+    background-color: rgba(239, 238, 246, 1);
+    top: 900px;
+    right: 1400px;
+
+    .nav-categories__items{
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        list-style: none;
+        .nav-categories__item{
+            color: rgba(92, 106, 121, 1);
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .nav-categories__item--active {
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(28, 42, 57, 1);
+            line-height: 1;
+            list-style-type: disc;
+        }
+
+        .nav-categories__item--active::marker{
+            width: 6px;
+            height: 6px;
+            color: rgba(117, 106, 211, 1);
+        }
+    }
+
+
+
+}

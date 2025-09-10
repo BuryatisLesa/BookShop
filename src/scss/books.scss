@@ -2,8 +2,10 @@
 @use "slider";
 @use "header";
 @use "main";
+@use "aside";
 
 html, body {
+    position: relative;
     margin: 0;
     padding: 0;
 

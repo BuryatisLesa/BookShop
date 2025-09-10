@@ -337,12 +337,16 @@ header {
 }
 
 main {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
+  margin-top: 105px;
 }
 main .books-content__items {
   display: flex;
   flex-direction: row;
+  justify-content: end;
   flex-wrap: wrap;
   gap: 76px;
 }
@@ -421,7 +425,40 @@ main .books-content__items .books-content__item .books-content__item-right .book
   cursor: pointer;
 }
 
+.nav-categories {
+  position: absolute;
+  z-index: 0;
+  padding: 45px 152px 81px 138px;
+  background-color: rgb(239, 238, 246);
+  top: 900px;
+  right: 1400px;
+}
+.nav-categories .nav-categories__items {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  list-style: none;
+}
+.nav-categories .nav-categories__items .nav-categories__item {
+  color: rgb(92, 106, 121);
+  font-size: 12px;
+  font-weight: 500;
+}
+.nav-categories .nav-categories__items .nav-categories__item--active {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(28, 42, 57);
+  line-height: 1;
+  list-style-type: disc;
+}
+.nav-categories .nav-categories__items .nav-categories__item--active::marker {
+  width: 6px;
+  height: 6px;
+  color: rgb(117, 106, 211);
+}
+
 html, body {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;

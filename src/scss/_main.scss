@@ -1,9 +1,14 @@
 main {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: row;
+    margin-top: 105px;
+
     .books-content__items {
         display: flex;
         flex-direction: row;
+        justify-content: end;
         flex-wrap: wrap;
         gap: 76px;
 
@@ -17,6 +22,7 @@ main {
             gap: 36px;
 
             .books-content__item-left {
+
                 .books-content__item-left-image {
                 max-width: 212px;
                 max-height: 300px;
