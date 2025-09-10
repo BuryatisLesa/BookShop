@@ -1,54 +1,12 @@
 // import * as dotenv from "dotenv";
 // import * as path from "path";
-
 // dotenv.config({ path: path.resolve(__dirname, "../.env") });
+
+import { BookItem, Book } from "./typeBooks";
 
 const apiKey = process.env.API_KEY!;
 
 
-interface SaleInfo {
-  country: string;
-  saleability: string;
-  isEbook: boolean;
-}
-
-interface Categories {
-    index: number;
-    category: string;
-}
-
-interface VolumeInfo {
-  title: string;
-  authors: string[];
-  imageLinks: {
-    thumbnail: string;
-  };
-  description: string;
-  averageRating: number;
-  ratingsCount: number;
-  categories: Categories;
-}
-
-interface Book {
-  id: string;
-  volumeInfo: VolumeInfo;
-  saleInfo: SaleInfo;
-}
-
-
-interface BookItem {
-  id: number;
-  title: string;
-  authors: object;
-  image: string;
-  description: string;
-  averageRating: number;
-  ratingsCount: number;
-  categories:Categories;
-  country: string;
-  saleInfo: SaleInfo;
-  isEbook: boolean;
-}
 
 export async function getData(): Promise<BookItem[]> {
     const urlBooks: Response = await fetch(
