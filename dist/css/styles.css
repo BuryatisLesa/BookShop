@@ -344,6 +344,7 @@ main .books-content__items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 76px;
 }
 main .books-content__items .books-content__item {
   display: flex;
@@ -352,25 +353,72 @@ main .books-content__items .books-content__item {
   width: 100%;
   max-height: 300px;
   height: 100%;
+  gap: 36px;
 }
 main .books-content__items .books-content__item .books-content__item-left .books-content__item-left-image {
   max-width: 212px;
   max-height: 300px;
+  height: 100%;
 }
 main .books-content__items .books-content__item .books-content__item-right {
-  max-width: 212px;
+  max-width: 176px;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   font-family: "Open Sans, sans-serif";
   font-weight: 400;
   font-size: 10px;
+  margin-top: 49px;
 }
 main .books-content__items .books-content__item .books-content__item-right .books-content__item-right-author {
   color: rgb(92, 106, 121);
   line-height: 100%;
   letter-spacing: 0%;
+}
+main .books-content__items .books-content__item .books-content__item-right .books-content__item-right-title {
+  font-family: "Montserrat, sans-serif";
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(28, 42, 57);
+  margin: 0 0 6px 0;
+  line-height: 1.3;
+  word-break: break-word;
+}
+main .books-content__items .books-content__item .books-content__item-right .books-content__item-right-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  max-height: 14px;
+  height: 100%;
+  gap: 6px;
+}
+main .books-content__items .books-content__item .books-content__item-right .books-content__item-right-rating .books-content__item-right-rating-ratingsCount {
+  color: rgb(92, 106, 121);
+}
+main .books-content__items .books-content__item .books-content__item-right .books-content__item-right-description {
+  color: rgb(92, 106, 121);
+  max-height: 38px;
+  height: 100%;
+}
+main .books-content__items .books-content__item .books-content__item-right .books-content__item-right-saleInfo {
+  font-weight: 700;
+  color: rgb(28, 42, 57);
+  text-transform: uppercase;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+main .books-content__items .books-content__item .books-content__item-right .books-content__item-right-buttonBuy {
+  padding: 18px 67px 17px 66px;
+  white-space: nowrap;
+  background: none;
+  border: 1px solid rgb(76, 61, 178);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 8px;
+  color: rgb(76, 61, 178);
+  cursor: pointer;
 }
 
 html, body {

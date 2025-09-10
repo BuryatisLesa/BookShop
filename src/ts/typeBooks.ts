@@ -1,7 +1,15 @@
- export interface SaleInfo {
+export interface listPrice {
+    amount: number;
+    currencyCode: string;
+}
+
+
+
+export interface SaleInfo {
   country: string;
   saleability: string;
   isEbook: boolean;
+  listPrice: listPrice;
 }
 
  export interface Categories {
