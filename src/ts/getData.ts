@@ -8,9 +8,9 @@ const apiKey = process.env.API_KEY!;
 
 
 
-export async function getData(): Promise<BookItem[]> {
+export async function getData(category: string): Promise<BookItem[]> {
     const urlBooks: Response = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q="subject:Business"&key=${apiKey}&printType=books&startIndex=0&maxResults=6&langRestrict=en`
+        `https://www.googleapis.com/books/v1/volumes?q="subject:${category}"&key=${apiKey}&printType=books&startIndex=0&maxResults=6&langRestrict=en`
     );
 
     try {

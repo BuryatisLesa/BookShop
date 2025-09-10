@@ -1,0 +1,45 @@
+main {
+    display: flex;
+    flex-direction: row;
+    .books-content__items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .books-content__item {
+            display: flex;
+            justify-content: space-between;
+            max-width: 424px;
+            width: 100%;
+            max-height: 300px;
+            height: 100%;
+
+            .books-content__item-left {
+                .books-content__item-left-image {
+                max-width: 212px;
+                // width: 100%;
+                max-height: 300px;
+                // height: 100%;
+                }
+
+            }
+
+            .books-content__item-right {
+                max-width: 212px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                font-family: "Open Sans, sans-serif";
+                font-weight: 400;
+                font-size: 10px;
+
+                .books-content__item-right-author {
+                    color: rgba(92, 106, 121, 1);
+                    line-height: 100%;
+                    letter-spacing: 0%;
+            }
+            }
+        }
+    }
+}

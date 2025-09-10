@@ -8,6 +8,6 @@ navigationCircle();
 startAutoSlide();
 
 (async () => {
-    const books = getData();
+    const books = getData("Biography");
     createCards(books);
 })();
